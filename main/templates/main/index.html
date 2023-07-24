@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Formulário de Pedido de Sorvete{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-6">
+    <form method="post">
+      {% csrf_token %}
+    <div class="formulario">
+        <label for="id_sabor">Sabor:</label>
+        <select name="sabor" id="id_sabor">
+            <option value="Açaí">Açaí</option>
+            <option value="Cupuaçu">Cupuaçu</option>
+        </select><br>
+
+        <label for="id_cobertura">Cobertura:</label>
+        <select name="cobertura" id="id_cobertura">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Morango">Morango</option>
+            <option value="Caramelo">Caramelo</option>
+            <option value="Leite Condensado">Leite Condensado</option>
+        </select><br>
+
+        <label for="id_tamanho">Tamanho:</label>
+        <select name="tamanho" id="id_tamanho">
+            <option value="Pequeno">Pequeno</option>
+            <option value="Médio">Médio</option>
+            <option value="Grande">Grande</option>
+            <option value="Barca">Barca</option>
+        </select><br>
+    </div>
+      <input type="submit" value="Enviar Pedido" class="btn btn-dark btn-block mt-3" class="letra">
+    </form>
+  </div>
+</div>
+
+<div class="row justify-content-center mt-3">
+  <div class="col-lg-2">
+    <div class="btn-group" role="group" aria-label="Basic example">
+    <a class="btn btn-danger btn-block" href="/lista" role="button">Lista</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,101 @@
+/* Reset de estilos para garantir a consistência entre os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f7f0f7; /* Cor de fundo padrão (roxolight) - leve alteração para um tom mais suave */
+  line-height: 1.6; /* Melhorar a legibilidade do texto */
+  color: #333; /* Cor do texto mais escura para melhor contraste */
+
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #993399; /* Roxo */
+  color: #fff; /* Texto branco */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Adicionar um espaço entre o cabeçalho e o conteúdo principal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para separar o cabeçalho do conteúdo */
+}
+
+header h1 {
+  font-size: 42px; /* Tamanho maior para o título */
+  margin-bottom: 15px; /* Reduzir a margem inferior para o título */
+}
+
+header p {
+  font-size: 20px; /* Tamanho maior para o parágrafo */
+}
+
+/* Estilo do conteúdo principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100%;
+}
+
+/* Estilo para os produtos */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; /* Aumentar o espaçamento entre os produtos */
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px; /* Borda arredondada um pouco mais suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a imagem */
+}
+
+.product h2 {
+  font-size: 28px; /* Tamanho menor para o título dos produtos */
+  margin-top: 20px; /* Aumentar a margem superior para o título dos produtos */
+}
+
+.product p {
+  font-size: 16px; /* Tamanho menor para o texto dos produtos */
+  margin-bottom: 20px; /* Reduzir a margem inferior para o texto dos produtos */
+}
+
+/* Estilo para o rodapé */
+footer {
+  
+  background-color: #993399; /* Roxo */
+  color: #fff; /* Texto branco */
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px; /* Aumentar a margem superior para o rodapé */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para separar o rodapé do conteúdo */
+
+  
+}
+
+/* Estilo para links */
+a {
+  color: #993399; /* Roxo */
+  text-decoration: none;
+  transition: color 0.2s; /* Adicionar uma transição suave para a cor do link */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #662f66; /* Cor mais escura ao passar o mouse sobre o link */
+}
+
+.fundo {
+  background-color: #993399;
+}
+
+.formulario {
+  font-size: 20px;
+  font-weight: 100;
+}
+
